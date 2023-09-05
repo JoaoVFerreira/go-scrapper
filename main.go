@@ -17,12 +17,9 @@ func main() {
 	c := colly.NewCollector()
 	c.IgnoreRobotsTxt = true
 	c.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
-	var fiiCards []FIICard;
-	// brazilianReciptSuffix := "B"
 
 	c.OnHTML(".tickerBox__title", func(h *colly.HTMLElement) {
 		fmt.Println("Texto:", h.Text)
-		fiiCards = append(fiiCards, FIICard{Title: h.Text})
 	})
 
 	c.OnRequest(func(r *colly.Request) {

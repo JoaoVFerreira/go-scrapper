@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"time"
 
 	"github.com/joho/godotenv"
 	"gorm.io/driver/postgres"
@@ -12,7 +13,25 @@ import (
 
 var DB *gorm.DB
 
-func ConnectToDataBase() *gorm.DB {
+type RealStateFund struct {
+	gorm.Model
+	ID   uint  `gorm:"primaryKey" json:"id"`
+	Code string `gorm:"size:255;not null;unique;index" json:"code"`
+	Type string `gorm:"size:255;not null;" json:"type"`
+	Description string `gorm:"size:255;not null;" json:"description"`
+	CreatedAt time.Time `json:"created_at"`
+  UpdatedAt time.Time `json:"updated_at"`
+  DeletedAt gorm.DeletedAt `json:"deleted_at,omitempty"`
+}
+
+func (f * RealStateFund) SaveFund() (*RealStateFund, error) {
+	err := DB.Create(&f).Error; if err != nil {
+		return &RealStateFund{}, err
+	}
+	return f, nil
+}
+
+func ConnectToDataBase() {
   err := godotenv.Load(".env"); if err != nil {
 	  log.Fatalf("Error loading .env file")
     panic(err)
@@ -33,5 +52,5 @@ func ConnectToDataBase() *gorm.DB {
 		fmt.Println("Cannot connect to database ", err.Error())
 		log.Fatal("connection error:", err)
 	}
-	return DB
+	DB.AutoMigrate(&RealStateFund{})
 }
