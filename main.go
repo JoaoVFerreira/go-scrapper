@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/JoaoVFerreira/GOScrapper/models"
 	"github.com/gocolly/colly/v2"
 )
 
@@ -12,6 +13,7 @@ type FIICard struct {
 }
 
 func main() {
+	models.ConnectToDataBase()
 	c := colly.NewCollector()
 	c.IgnoreRobotsTxt = true
 	c.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
