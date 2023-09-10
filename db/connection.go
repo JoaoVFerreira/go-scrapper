@@ -103,11 +103,11 @@ func (f *RealStateFund) BeforeUpdate(tx *gorm.DB) error {
 
 func (f *RealStateFund) FindAllWithData() ([]RealStateFund, error) {
 	var funds []RealStateFund
-	err := DB.Where("pvp IS NOT NULL AND liquidity IS NOT NULL AND dividend_yield IS NOT NULL").Find(&funds).Error
+	err := DB.Where("pvp IS NOT NULL AND COALESCE(pvp, '') <> '' AND liquidity IS NOT NULL AND COALESCE(liquidity, '') <> '' AND dividend_yield IS NOT NULL AND COALESCE(dividend_yield, '') <> ''").Find(&funds).Error
 	if err != nil {
-		return nil, err 
+		return nil, err
 	}
-	return funds, nil 
+	return funds, nil
 }
 
 func ConnectToDataBase() {
