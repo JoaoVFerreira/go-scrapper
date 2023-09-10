@@ -1,4 +1,4 @@
-module github.com/JoaoVFerreira/GOScrapper
+module github.com/JoaoVFerreira/go-scrapper
 
 go 1.21.0
 

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/JoaoVFerreira/GOScrapper/db"
+	"github.com/JoaoVFerreira/go-scrapper/db"
 )
 
 type Result struct {

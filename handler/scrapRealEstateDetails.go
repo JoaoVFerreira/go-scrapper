@@ -4,7 +4,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/JoaoVFerreira/GOScrapper/db"
+	"github.com/JoaoVFerreira/go-scrapper/db"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/gocolly/colly/v2"
 )

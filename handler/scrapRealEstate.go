@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/JoaoVFerreira/GOScrapper/db"
+	"github.com/JoaoVFerreira/go-scrapper/db"
 	"github.com/gocolly/colly/v2"
 )
 

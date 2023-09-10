@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/JoaoVFerreira/GOScrapper/db"
-	"github.com/JoaoVFerreira/GOScrapper/handler"
-	"github.com/JoaoVFerreira/GOScrapper/output"
+	"github.com/JoaoVFerreira/go-scrapper/db"
+	"github.com/JoaoVFerreira/go-scrapper/handler"
+	"github.com/JoaoVFerreira/go-scrapper/output"
 )
 
 func main() {
