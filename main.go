@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/JoaoVFerreira/GOScrapper/db"
-	"github.com/JoaoVFerreira/GOScrapper/handler"
+	"github.com/JoaoVFerreira/GOScrapper/output"
 )
 
 
@@ -10,7 +10,8 @@ func main() {
 	// Initialize database
 	db.ConnectToDataBase()
 	// Scrap real estate code
-	handler.ScrapRealEstate()
+	// handler.ScrapRealEstate()
 	// Scrap real estate details by code
-	handler.ScrapRealEstateDetail()
+	// handler.ScrapRealEstateDetail()
+	output.Decision()
 } 
