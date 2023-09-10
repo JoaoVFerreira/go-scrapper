@@ -12,7 +12,7 @@ The Real Estate Funds Analyzer is a Go application designed to collect data from
 - **Top Fund Selection**: It identifies the top 10 performing funds that meet the specified criteria.
 - **JSON Output**: The selected funds are stored in a JSON file for easy access and reference.
 
-## Prerequisites
+## Pre - requisites
 
 Before running the Real Estate Funds Analyzer, ensure that you have the following prerequisites installed on your system:
 
