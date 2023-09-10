@@ -29,19 +29,22 @@ func ScrapRealEstateDetail() {
 			})
 
 			if len(pTexts) == completedParagraphTexts {
-				fund := db.RealStateFund{}
-				liquidity := pTexts[1]
-				dy := pTexts[5]
-				pvp := pTexts[15] 
-
 				url := h.Request.URL.String()
 				urlSplit := strings.Split(url, "/")
 				code := urlSplit[len(urlSplit)-1]
 
+				f := db.RealStateFund{}
+				fund, err := f.FindByCode(code); if err != nil {
+					return
+				}
+
+				liquidity := pTexts[1]
+				dy := pTexts[5]
+				pvp := pTexts[15] 
+
 				fund.Pvp = pvp
 				fund.Liquidity = liquidity
 				fund.DividendYield = dy
-				fund.Code = code
 				fund.UpdateFund(dy, pvp, liquidity)
 			}
 	})
