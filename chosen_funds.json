@@ -1,0 +1,102 @@
+[
+  {
+    "code": "BCRI11",
+    "result_detail": {
+      "dividen_yield": 14.73,
+      "liquidity": 641.2,
+      "pvp": 0.72,
+      "type": "Papel: Papéis",
+      "description": "Banestes Recebíveis Imobiliários"
+    }
+  },
+  {
+    "code": "OURE11",
+    "result_detail": {
+      "dividen_yield": 14.65,
+      "liquidity": 108.4,
+      "pvp": 0.89,
+      "type": "Fundo Misto: Misto",
+      "description": "Ourinvest Cyrela"
+    }
+  },
+  {
+    "code": "HCHG11",
+    "result_detail": {
+      "dividen_yield": 14.65,
+      "liquidity": 88.8,
+      "pvp": 0.82,
+      "type": "Papel: Papéis",
+      "description": "HECTARE RECEBÍVEIS HIGH GRADE"
+    }
+  },
+  {
+    "code": "GCRI11",
+    "result_detail": {
+      "dividen_yield": 14.61,
+      "liquidity": 225.4,
+      "pvp": 0.93,
+      "type": "Papel: Papéis",
+      "description": "GALAPAGOS RECEBÍVEIS IMOBILIÁRIOS"
+    }
+  },
+  {
+    "code": "RPRI11",
+    "result_detail": {
+      "dividen_yield": 14.61,
+      "liquidity": 179.9,
+      "pvp": 0.95,
+      "type": "Papel: Papéis",
+      "description": "FII RBR PR"
+    }
+  },
+  {
+    "code": "BNFS11",
+    "result_detail": {
+      "dividen_yield": 14.55,
+      "liquidity": 131.9,
+      "pvp": 1.33,
+      "type": "Tijolo: Agências de Bancos",
+      "description": "Banrisul Novas Fronteiras"
+    }
+  },
+  {
+    "code": "IBCR11",
+    "result_detail": {
+      "dividen_yield": 14.53,
+      "liquidity": 303.9,
+      "pvp": 0.79,
+      "type": "Fundo Misto: Papéis",
+      "description": "FDO DE INV IMOBILIÁRIO DE CRI INTEGRAL BREI"
+    }
+  },
+  {
+    "code": "RBHG11",
+    "result_detail": {
+      "dividen_yield": 14.53,
+      "liquidity": 266.9,
+      "pvp": 0.97,
+      "type": "Papel: Papéis",
+      "description": "RIO BRAVO CREDITO IMOB HIGH GRADE"
+    }
+  },
+  {
+    "code": "HABT11",
+    "result_detail": {
+      "dividen_yield": 14.5,
+      "liquidity": 1.2,
+      "pvp": 0.94,
+      "type": "Papel: Papéis",
+      "description": "HABITAT II - FDO INV IMOB"
+    }
+  },
+  {
+    "code": "OUJP11",
+    "result_detail": {
+      "dividen_yield": 14.45,
+      "liquidity": 556.2,
+      "pvp": 1.03,
+      "type": "Papel: Papéis",
+      "description": "OURINVEST JPP"
+    }
+  }
+]

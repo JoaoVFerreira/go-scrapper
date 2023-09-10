@@ -6,7 +6,6 @@ import (
 	"github.com/JoaoVFerreira/GOScrapper/output"
 )
 
-
 func main() {
 	// Initialize database
 	db.ConnectToDataBase()
